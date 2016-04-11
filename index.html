@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>renren</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="mainjs.js"></script>
+</head>
+
+<body>
+    <header class="header-outer">
+        <header class="header-inner">
+            <div class="logobox"><img src="src\logo.png" alt="" class="logo"></div>
+            <form class="searchbox">
+                <input placeholder="请输入搜寻关键字" type="text" onfocusout="searchListOut()" onfocus="searchListOn()"></input>
+                <button type="submit"></button>
+            </form>
+            <div class="header-inner-right">
+                <div class="menu-user">
+                    <ul>
+                        <li>
+                            <a href=""><img src="src\qiandao-ico.png" height="18px">签到升级</a>
+                        </li>
+                        <li>
+                            <a href=""><img src="src\userico.png" height="15px" alt="">剑寰苍穹</a>
+                        </li>
+                        <li><a href="">等級：黃金會員</a></li>
+                        <li><a href="">註銷</a></li>
+                        <li><a href="">消息（0）</a></li>
+                        <li><a href="">邀請</a></li>
+                        <li><a href=""><a href="">發佈</a></a>
+                        </li>
+                        <li><a href=""><i></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search-list" id="searchlist">
+                <ul>
+                    <li>
+                        <a href=""><span class="orangetext">1</span>美女在线视频</a>
+
+                    </li>
+                    <li>
+
+                        <a href=""><span class="orangetext">2</span>死侍</a>
+                    </li>
+                    <li>
+
+                        <a href=""><span class="orangetext">3</span>生活大爆炸</a>
+                    </li>
+                    <li>
+
+                        <a href=""><span>4</span>行尸走肉</a>
+                    </li>
+                    <li>
+
+                        <a href=""><span>5</span>纸牌屋</a>
+                    </li>
+                    <li>
+
+                        <a href=""><span>6</span>闪电侠</a>
+                    </li>
+                    <li>
+
+                        <a href=""><span>7</span>功夫熊猫3</a>
+                    </li>
+                    <li>
+
+                        <a href=""><span>8</span>神盾局特工</a>
+                    </li>
+                    <li>
+
+                        <a href=""><span>9</span>权利的游戏</a>
+                    </li>
+                    <li>
+
+                        <a href=""><span>10</span>蝙蝠侠</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="divider"></div>
+        <nav class="navbar">
+            <div class="menu-page">
+                <ul>
+                    <li><a href="">首頁</a></li>
+                    <li><a href="">收藏</a></li>
+                    <li><a href="">字幕</a></li>
+                    <li><a href="">資訊</a></li>
+                    <li><a href="">影視庫</a></li>
+                    <li><a href="">今日更新</a></li>
+                    <li><a href="">播出表</a></li>
+                    <li><a href="">美女視頻</a></li>
+                    <li><a href="">加入字幕組</a></li>
+                    <li><a href="">手機APP</a></li>
+                    <li><a href="">微信</a></li>
+                    <li><a href="">微博</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="divider" name="hearder-divider"></div>
+    <section class="section-01">
+        <div class="hot-list">
+            <div class="hot-list-header">
+                <h1>二十四小时热门排行</h1>
+            </div>
+            <div class="hot-list">
+                <ul>
+                    <li>
+                        <a href="">
+                            <div><span>1</span><img src="src\poster-mini.jpg" alt=""></div>
+                            <div>
+                                <h3>《死侍》</h3>
+                                <p>2016</p>
+                                <p>电影</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href=""><span>2</span>《蝙蝠侠：黑暗骑士归来》<span>电影</span></a></li>
+                    <li><a href=""><span>3</span>《黑帆》<span>美剧</span></a></li>
+                    <li><a href=""><span>4</span>《致命诱惑》<span>美剧</span></a></li>
+                    <li><a href=""><span>5</span>《荒野猎人》<span>电影</span></a></li>
+                    <li><a href=""><span>6</span>《星球大战7：原力觉醒》<span>电影</span></a></li>
+                    <li><a href=""><span>7</span>《神盾局特工》<span>美剧</span></a></li>
+                    <li><a href=""><span>8</span>《行尸走肉》<span>美剧</span></a></li>
+                    <li><a href=""><span>9</span>《重生》<span>美剧</span></a></li>
+                    <li><a href=""><span>10</span>《寂寞时光》<span>电影</span></a></li>
+                    <li><a href=""><span>11</span>《夜班经理》<span>英剧</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="carousel">
+            <div class="carousel-image"></div>
+            <img src="src/carousel0.jpg" alt="" id="carouselImage">
+            <div class="carousel-button">
+                <ul id="carousel-button-ul">
+                    <li><span onmouseover="carouselSelect(this);" onmouseout="carouselContinue(this)" data-id="0"></span></li>
+                    <li><span onmouseover="carouselSelect(this);" onmouseout="carouselContinue(this)" data-id="1"></span></li>
+                    <li><span onmouseover="carouselSelect(this);" onmouseout="carouselContinue(this)" data-id="2"></span></li>
+                    <li><span onmouseover="carouselSelect(this);" onmouseout="carouselContinue(this)" data-id="3"></span></li>
+                </ul>
+                <div class="carousel-text">
+                    <p id="carouselText">《致命诱惑》诱惑开播</p>
+                </div>
+            </div>
+        </div>
+        <aside class="rightbox">
+            <div class="today">
+                <div class="header">
+                    <ul>
+                        <li>
+                            <span>今日播出</span>
+                        </li>
+                        <li>
+                            <span>2016-03-30</span>
+                        </li>
+                        <li>
+                            <span>周三</span>
+                        </li>
+                        <li><a href="">更多</a></li>
+                    </ul>
+                </div>
+                <div class="show">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <span>神盾局特工</span>
+                                <span>Marvel's Agents of S.H.I.E.L.D</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>闪电侠</span>
+                                <span>The Flash S02E17</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>神烦警探</span>
+                                <span>Brooklyn Nine Nine S03E20</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>我是僵尸</span>
+                                <span>iZombie S02E16</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>芝加哥烈焰</span>
+                                <span>Chicago Fire S04E17</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>美国罪案故事</span>
+                                <span>American Crime Stoyr S01E09</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>芝加哥医院</span>
+                                <span>Chicago Med S01E12</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>初来乍到</span>
+                                <span>Fresh Off The Boat S02E18</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>杰茜驾到</span>
+                                <span>New GirlS05E13</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>假亦真</span>
+                                <span>Faking it S03E03</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="recuit">
+                    <ul>
+                        <li>
+                            <a href="">【招募】需要身处加拿大和美国的网友帮忙录制英文字</a>
+                        </li>
+                        <li>
+                            <a href="">【招募】小语种组长期招募法德西俄意语翻译</a>
+                        </li>
+                        <li>
+                            <a href="">【招募】【截止2016年4月30日】时间轴组限时招募-暖</a>
+                        </li>
+                        <li>
+                            <a href="">【招募】【开放招新】字幕组长期招募英美翻译！！</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </section>
+    <section class="section-02-newsandcomment">
+        <div class="sec02-leftbox">
+            <div class="header">
+                <h1>新闻资讯</h1>
+            </div>
+            <div class="sec02-leftbox-ulbox">
+                <ul>
+                    <li>
+                        <img src="src/newsimg.png" alt="" class="imgbox-img">
+                        <div class="sec02-leftbox-ulbox-topli-content">
+                            <h1>TNT宣布夏季回归剧首播日期</h1>
+                            <a href="" class="topli-a">[查看全文]</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">Better call Saul or Better go home---评《绝命律师》第二季前半季</a>
+                        <p>眼瞅着《绝命律师》第二季已经播完打扮，广大剧迷盼望看到吉米律师最终黑化的结果，...</p>
+                    </li>
+                    <li>
+                        <a href="">《犯罪心理：国境之外》：嫌疑人留下重大线索？</a>
+                        <p>周三的《犯罪心理：国境之外》中，如果汉克威利斯（Hank Willis）是嫌疑...</p>
+                    </li>
+                    <li>
+                        <a href="">《制造凶手》：史蒂文·艾佛理律师称新嫌疑人出现</a>
+                        <p>Netfilx剧集《制造凶手》的主角史蒂文·艾佛理（Steven Avery）请...</p>
+                    </li>
+                    <li>
+                        <a href="">TNT宣布夏季回归剧首播日期</a>
+                        <p>周二，TNT宣布了回归剧集的夏季时间表，《妙女神探》最后一季将于6月6...</p>
+                    </li>
+                    <li>
+                        <a href="">埃尔伯德何艾迪·斯旺将回归《闪电侠》</a>
+                        <p>预告地址：http://v.youku.com/v_show/id_XMTUwO...</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec02-rightbox">
+            <div class="sec02-rightbox-header">
+                <h1>最新影片剧评</h1>
+            </div>
+            <div class="sec02-rightbox-ulbox">
+                <ul>
+                    <li>
+                        <img src="http://tu.rrsub.com:8014/ftp/2016/0215/f686f566219cc1bdd343dee1745105d8.jpg" alt="" class="imgbox-img">
+                        <div>
+                            <h3>X档案第十季之前发生了什么</h3>
+                            <p>距离X档案的最后一集已经有14年了，而且既然不少观众早已跟随主演的脚步离开最后一季,很显然你估计已经淡忘了故事. ---- 独自哥哥</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="">Better call Saul or Better go home ---评《绝命律师》第二季</a>
+                        </div>
+                        <div>
+                            <a href="">Greatdino</a>
+                            <span> 评 </span>
+                            <span> 美剧 </span>
+                            <a href="">《绝命律师》</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="">《蝙蝠侠大战超人》：你们要的文艺都有了，然后呢？</a>
+                        </div>
+                        <div>
+                            <a href="">GaGa和我还有霉婊</a>
+                            <span> 评 </span>
+                            <span> 电影 </span>
+                            <a href="">《蝙蝠侠大战超人 : 正义黎明》</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="">《蝙蝠侠大战超人：正义黎明》：一座新的高山</a>
+                        </div>
+                        <div>
+                            <a href="">独自哥哥</a>
+                            <span> 评 </span>
+                            <span> 电影 </span>
+                            <a href="">《蝙蝠侠大战超人 : 正义黎明》</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="">《纸牌屋》：没有彼此，你们什么都不是！</a>
+                        </div>
+                        <div>
+                            <a href="">GaGa和我还有霉婊</a>
+                            <span> 评 </span>
+                            <span> 美剧 </span>
+                            <a href="">《纸牌屋》</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="">政治真相总会有两个以上</a>
+                        </div>
+                        <div>
+                            <a href="">萧秋水镇江</a>
+                            <span> 评 </span>
+                            <span> 美剧 </span>
+                            <a href="">《纸牌屋》</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="">始祖家族S3E15剧评：团圆还是破坏</a>
+                        </div>
+                        <div>
+                            <a href="">moonyuliang </a>
+                            <span> 评 </span>
+                            <span> 美剧 </span>
+                            <a href="">《始祖家族》</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section-03-latestreleast">
+        <div class="header">
+            <h1>最新发布</h1>
+        </div>
+        <div class="sec03-ulbox">
+            <ul>
+                <li>
+                    <div class="sec03-ulbox-item">
+                        <img src="http://tu.rrsub.com:8014/ftp/2016/0405/m_18962e728ea45cd4a243f6889949f2d7.jpg" alt="">
+                        <a href="">爆音少女！！</a>
+                        <p>动画(日本)</p>
+                        <p>剧情/动画</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sec03-ulbox-item">
+                        <img src="http://tu.rrsub.com:8014/ftp/2016/0404/m_c33fb85bc4f1a14f05b612b869a7d991.jpg" alt="">
+                        <a href="">功夫熊猫之卷轴的秘密</a>
+                        <p>电影(美国)</p>
+                        <p>动作/喜剧/动画</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sec03-ulbox-item">
+                        <img src="http://tu.rrsub.com:8014/ftp/2016/0404/m_bc6fcd2c085e314fb26dafa8b3e9ffbd.jpg" alt="">
+                        <a href="">激情的颜色</a>
+                        <p>墨剧（墨西哥）</p>
+                        <p>动作/喜剧/动画</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sec03-ulbox-item">
+                        <img src="http://tu.rrsub.com:8014/ftp/2016/0403/m_a67e4f6cfdf8a29f26f4c97bca881cd4.jpg" alt="">
+                        <a href="">为了这条街的生命</a>
+                        <p>日剧（日本）</p>
+                        <p>剧情</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sec03-ulbox-item">
+                        <img src="http://tu.rrsub.com:8014/ftp/2016/0403/m_d1d104cf1bb738795e6232a903835461.jpg" alt="">
+                        <a href="">星星之火</a>
+                        <p>日剧（日本）</p>
+                        <p>悬疑</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sec03-ulbox-item">
+                        <img src="http://tu.rrsub.com:8014/ftp/2016/0402/m_a7a38acab7ab4079c7d1e0c5cca7ce77.jpg" alt="">
+                        <a href="">蚱蜢</a>
+                        <p>电影（日本）</p>
+                        <p>悬疑</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="sec03-ulbox-item">
+                        <img src="http://tu.rrsub.com:8014/ftp/2016/0401/m_df2494023950ff86c16bf3ff330f5fcb.jpg" alt="">
+                        <a href="">深夜的红酒</a>
+                        <p>电影（泰国）</p>
+                        <p>剧情</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+        <div class="divider" name="hearder-divider"></div>
+    <section class="section-04">
+        <div class="sec04-leftbox">
+            <div class="header">
+                <h1>論壇新帖</h1>
+            </div>
+            <div class="ulbox">
+                <ul>
+                    <li>
+                        <img src="src/bbsico.png" alt=""></img>
+                        <a href="">16-18集百度云盘不能下载，请问你们知...</a>
+                        <p>30分钟前《国务卿女士》</p>
+                    </li>
+                    <li>
+                        <img src="src/bbsico.png" alt=""></img>
+                        <a href="">我就想说15集插播的美国大选广告让我措手...</a>
+                        <p>43分钟前《神盾局特工》</p>
+                    </li>
+                    <li>
+                        <img src="src/bbsico.png" alt=""></img>
+                        <a href="">原著的故事基本拍完了，还有没有第二季？</a>
+                        <p>43分钟前《11.22.63》</p>
+                    </li>
+                    <li>
+                        <img src="src/bbsico.png" alt=""></img>
+                        <a href="">比起尼克和朱丽叶,我更喜欢尼克和艾达琳这...</a>
+                        <p>2小时前《格林》</p>
+                    </li>
+                    <li>
+                        <img src="src/bbsico.png" alt=""></img>
+                        <a href="">高智商剧集，难为编剧了，更难为观众了。</a>
+                        <p>4小时前《亿万》</p>
+                    </li>
+                    <li>
+                        <img src="src/bbsico.png" alt=""></img>
+                        <a href="">停播了？？？</a>
+                        <p>7小时前《福尔摩斯：演绎法》</p>
+                    </li>
+                    <li>
+                        <img src="src/bbsico.png" alt=""></img>
+                        <a href="">停播了，还是被砍了？</a>
+                        <p>8小时前《路西法》</p>
+                    </li>
+                    <li>
+                        <img src="src/bbsico.png" alt=""></img>
+                        <a href="">季終集在IMDB网站上的评价简直惨不忍睹...</a>
+                        <p>10小时前《行尸走肉》</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec04-midbox">
+            <div class="header">
+                <h1>熱門簡評</h1>
+            </div>
+            <div class="midbox-ulbox">
+                <ul id="moving">
+                    <li>
+                        <img src="src/icon.gif" alt=""></img>
+                        <div class="sec04-midbox-item">
+
+                            <a href="">ken123</a>
+                            <span id="showtype">评电视剧</span>
+                            <span>《行尸走肉》</span>
+                            <span>9.4</span>
+
+                            <p>这片好比老师讲课，预习了的同学表示老师讲的挺好，没预习的同学表示老师讲的毛。问题是，这不...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="src/icon.gif" alt=""></img>
+                        <div class="sec04-midbox-item">
+
+                            <a href="">ken123</a>
+                            <span id="showtype">评电视剧</span>
+                            <span>《行尸走肉》</span>
+                            <span>9.4</span>
+
+                            <p>这片好比老师讲课，预习了的同学表示老师讲的挺好，没预习的同学表示老师讲的毛。问题是，这不...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="src/icon.gif" alt=""></img>
+                        <div class="sec04-midbox-item">
+
+                            <a href="">ken123</a>
+                            <span id="showtype">评电视剧</span>
+                            <span>《行尸走肉》</span>
+                            <span>9.4</span>
+
+                            <p>这片好比老师讲课，预习了的同学表示老师讲的挺好，没预习的同学表示老师讲的毛。问题是，这不...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="src/icon.gif" alt=""></img>
+                        <div class="sec04-midbox-item">
+
+                            <a href="">ken123</a>
+                            <span id="showtype">评电视剧</span>
+                            <span>《行尸走肉》</span>
+                            <span>9.4</span>
+
+                            <p>这片好比老师讲课，预习了的同学表示老师讲的挺好，没预习的同学表示老师讲的毛。问题是，这不...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="src/icon.gif" alt=""></img>
+                        <div class="sec04-midbox-item">
+
+                            <a href="">ken123</a>
+                            <span id="showtype">评电视剧</span>
+                            <span>《行尸走肉》</span>
+                            <span>9.4</span>
+
+                            <p>这片好比老师讲课，预习了的同学表示老师讲的挺好，没预习的同学表示老师讲的毛。问题是，这不...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="src/icon.gif" alt=""></img>
+                        <div class="sec04-midbox-item">
+
+                            <a href="">ken123</a>
+                            <span id="showtype">评电视剧</span>
+                            <span>《行尸走肉》</span>
+                            <span>9.4</span>
+
+                            <p>这片好比老师讲课，预习了的同学表示老师讲的挺好，没预习的同学表示老师讲的毛。问题是，这不...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="src/icon.gif" alt=""></img>
+                        <div class="sec04-midbox-item">
+
+                            <a href="">ken123</a>
+                            <span id="showtype">评电视剧</span>
+                            <span>《行尸走肉》</span>
+                            <span>9.4</span>
+
+                            <p>这片好比老师讲课，预习了的同学表示老师讲的挺好，没预习的同学表示老师讲的毛。问题是，这不...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="src/icon.gif" alt=""></img>
+                        <div class="sec04-midbox-item">
+
+                            <a href="">ken123</a>
+                            <span id="showtype">评电视剧</span>
+                            <span>《行尸走肉》</span>
+                            <span>9.4</span>
+
+                            <p>这片好比老师讲课，预习了的同学表示老师讲的挺好，没预习的同学表示老师讲的毛。问题是，这不...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="src/icon.gif" alt=""></img>
+                        <div class="sec04-midbox-item">
+
+                            <a href="">ken123</a>
+                            <span id="showtype">评电视剧</span>
+                            <span>《行尸走肉》</span>
+                            <span>9.4</span>
+
+                            <p>这片好比老师讲课，预习了的同学表示老师讲的挺好，没预习的同学表示老师讲的毛。问题是，这不...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="src/icon.gif" alt=""></img>
+                        <div class="sec04-midbox-item">
+
+                            <a href="">ken123</a>
+                            <span id="showtype">评电视剧</span>
+                            <span>《行尸走肉》</span>
+                            <span>9.4</span>
+
+                            <p>这片好比老师讲课，预习了的同学表示老师讲的挺好，没预习的同学表示老师讲的毛。问题是，这不...</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec04-rightbox">
+            <div class="header">
+                <h1>近期全球影院热门影片</h1>
+            </div>
+            <div class="sec04-rightbox-mid">
+                <img src="http://tu.rrsub.com:8014/ftp/2016/0329/m_250805c6aeed1ff264b93e79c077deb9.jpg" alt="">
+                <div class="sec04-rightbox-mid-ul">
+                    <ul>
+                        <li><a href="">《蝙蝠侠大战超人：正义黎明》</a></li>
+                        <li><a href="">《荒野猎人》</a></li>
+                        <li><a href="">《卡罗尔》</a></li>
+                        <li><a href="">《奎迪》</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sec04-rightbox-footer">
+                <label class="sec04-label"><strong>类型：</strong>剧情/体育</label>
+                <label class="sec04-label"><strong>制作：</strong></label>
+                <label class="sec04-label"><strong>导演：</strong><a href="">瑞恩·库格勒</a></label>
+                <label class="sec04-label"><strong>编剧：</strong><a href="">瑞恩·库格勒</a></label>
+                <label class="sec04-label"><strong>上映：</strong>2015-11-25(美国)</label>
+                <label for="" class="sec04-label"><strong>演员：</strong><a href="">迈克尔·B·乔丹</a></label>
+                <p>前世界重量级拳王洛奇在本作中担任起阿多尼斯约翰逊（Adonis Johnson）的教练和导师。Adonis是他已故的朋友和昔日的对手阿波罗（Apollo Creed）的儿子。</p>
+                <span>8.5</span>
+            </div>
+        </div>
+    </section>
+    <div class="divider" name="hearder-divider"></div>
+    <section class="section-05">
+        <div class="sec05-leftbox">
+            <div class="header">
+                <h1>最後更新</h1>
+            </div>
+            <div class="sec05-leftbox-body">
+                <ul>
+                    <li>
+                        <img src="http://tu.rrsub.com:8014/ftp/2015/1005/s_c72040b8ef01c70d6da1b207d283456f.jpg" alt="">
+                        <div class="sec05-leftbox-body-content">
+                            <label for="">
+                                <font>【美剧】</font>
+                                <strong>《凶鬼恶灵》</strong>
+                                <font>[魔幻/恐怖/惊悚/冒险]</font>
+                                <font>9.5</font>
+                            </label>
+                            <label for="">原名：<strong>Supernatural</strong></label>
+                            <label for="">说明：<font>[更新S11E18]</font></label>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://tu.rrsub.com:8014/ftp/2015/0923/s_b71e95055b4d313e7470624c9f4342cf.jpg" alt="">
+                        <div class="sec05-leftbox-body-content">
+                            <label for="">
+                                <font>【纪录片】</font>
+                                <strong>《BBC 地平线》</strong>
+                                <font>[纪录]</font>
+                                <font>9.8</font>
+                            </label>
+                            <label for="">原名：<strong>BBC Horizon</strong></label>
+                            <label for="">说明：<font>更新51季《体检真的好吗》 48季《太阳风暴：地球的威胁》每集是独立的！！！不需要补剧！！！</font></label>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://tu.rrsub.com:8014/ftp/2016/0406/s_8dc82cce34d7b31e189702c864bf0ef9.jpg" alt="">
+                        <div class="sec05-leftbox-body-content">
+                            <label for="">
+                                <font>【美剧】</font>
+                                <strong>《飞天小女警 2016》</strong>
+                                <font>[冒险/动画]</font>
+                                <font>9.7</font>
+                            </label>
+                            <label for="">原名：<strong>The Powerpuff Girls 2016</strong></label>
+                            <label for="">说明：<font>深影字幕组原创翻译/字幕更新至S01E01E02</font></label>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://tu.rrsub.com:8014/ftp/2015/0918/s_dda80c805bd77a9dd7704b5d7aacf5bd.jpg" alt="">
+                        <div class="sec05-leftbox-body-content">
+                            <label for="">
+                                <font>【美剧】</font>
+                                <strong>《神盾局特工》</strong>
+                                <font>[动作/剧情/科幻]</font>
+                                <font>8.5</font>
+                            </label>
+                            <label for="">原名：<strong>Marvel's Agents of S.H.I.E.L.D.</strong></label>
+                            <label for="">说明：<font>ZiMuZu原创翻译/字幕更新S03E15/已续订第4季</font></label>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://tu.rrsub.com:8014/ftp/2015/0118/s_f27e95940e74bcc08f0fb9621a193380.jpg" alt="">
+                        <div class="sec05-leftbox-body-content">
+                            <label for="">
+                                <font>【美剧】</font>
+                                <strong>《十二猴子》</strong>
+                                <font>[科幻/血腥]</font>
+                                <font>8.5</font>
+                            </label>
+                            <label for="">原名：<strong>12 Monkeys</strong></label>
+                            <label for="">说明：<font>已续订第二季！尼基塔IT男穿越时空拯救世界！</font></label>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://tu.rrsub.com:8014/ftp/2015/0912/s_e91c33db828c7ed1a7d0508fa57044dd.jpg" alt="">
+                        <div class="sec05-leftbox-body-content">
+                            <label for="">
+                                <font>【美剧】</font>
+                                <strong>《摩登家庭》</strong>
+                                <font>[喜剧]</font>
+                                <font>9.7</font>
+                            </label>
+                            <label for="">原名：<strong>Modern Family</strong></label>
+                            <label for="">说明：<font>更新字幕组原创中英双语字幕S07E17</font></label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sec05-rightbox">
+            <div class="header">
+                <h1>新劇推薦</h1>
+            </div>
+            <div class="sec05-rightbox-body">
+                <ul>
+                    <li>
+                        <img src="http://tu.rrsub.com:8014/ftp/2016/0222/bf039da3e61b3ada09432b06830a7476.jpg" alt="">
+                        <div class="sec05-rightbox-body-content">
+                            <h3>《夜班经理》</h3>
+                            <p>自打小说《夜班经理》1993年问世的那一刻起，电影制片人们便产生了把这部关于军火交易的间谍小说搬上大银幕的想</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://tu.rrsub.com:8014/ftp/2016/0215/ef2178c154b22684b8398fc749087080.jpg" alt="">
+                        <div class="sec05-rightbox-body-content">
+                            <h3>《11/22/63》</h3>
+                            <p>该剧故事聚焦肯尼迪总统遇刺事件，1963年11月22日，美国得克萨斯州达拉斯市响起三声枪响，总统肯尼迪遇刺身亡，世界</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://tu.rrsub.com:8014/ftp/2016/0123/fdcaae2391440d944b482fc6d74a2ace.jpg" alt="">
+                        <div class="sec05-rightbox-body-content">
+                            <h3>《路西法》</h3>
+                            <p>《路西法》是基于NDC Vertigo同名漫画改编的电视剧，讲述首位堕落天使的故事。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://tu.rrsub.com:8014/ftp/2016/0123/4c96e98f6c7cb99e102cdf74ce62a15e.jpg" alt="">
+                        <div class="sec05-rightbox-body-content">
+                            <h3>《亿万》</h3>
+                            <p>围绕两位主要人物，作风强硬的律师Rhodes和野心勃勃的对冲基金高手Axe展开，讲述世界金融中心华尔街的风云变</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://tu.rrsub.com:8014/ftp/2016/0123/b6d9f237cc55124127c8ee4ff1b4a59b.jpg" alt="">
+                        <div class="sec05-rightbox-body-content">
+                            <h3>《明日传奇》</h3>
+                            <p>《明日传奇》中的人物角色包括原子侠、冷冻队长、热浪、火风暴（博士），鹰女，时间猎手以及白金丝雀。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://tu.rrsub.com:8014/ftp/2016/0113/5d74604066f90ff3c2b1738661e6d30b.jpg" alt="">
+                        <div class="sec05-rightbox-body-content">
+                            <h3>《沙娜拉传奇》</h3>
+                            <p>故事发生在人类文明毁灭数千年之后的「新人类世界」中，远古的邪恶力量日渐复苏，笼罩北方的阴云将扩散至四方大</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://tu.rrsub.com:8014/ftp/2016/0113/a2828e5528ad1de48b26a5e74fa0ec44.jpg" alt="">
+                        <div class="sec05-rightbox-body-content">
+                            <h3>《蓝海暮色》</h3>
+                            <p>故事描述单身母亲、警探因为自身的腐败问题而遭到反腐败部门的调查，她被迫同意为联邦调查局从事一项绝密的卧底任务</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://tu.rrsub.com:8014/ftp/2015/1215/61988db7e4d7b50885da286e30e6a564.jpg" alt="">
+                        <div class="sec05-rightbox-body-content">
+                            <h3>《童年的终结》</h3>
+                            <p>故事描述外星领主率领外星种族以和平名义来到地球。他们终结了地球上所有的战争，将地球变成了一个近似乌托邦的天</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="divider" name="hearder-divider"></div>
+    <section class="section-06">
+        <div class="header">
+            <h1>好站推荐</h1>
+        </div>
+        <ul>
+            <li><img src="http://tu.rrsub.com:8014/ftp/2015/1107/728f4617d7c0db91e8b0f94220b95a1b.jpg" alt=""></li>
+            <li><img src="http://tu.rrsub.com:8014/ftp/2016/0406/3c2e42e7cac47463a4d71ceb6868eced.jpg" alt=""></li>
+            <li><img src="http://tu.rrsub.com:8014/ftp/2016/0314/f28a9cc07e0edb03d2d84bc9e2a0ddd5.png" alt=""></li>
+            <li><img src="http://tu.rrsub.com:8014/ftp/2015/1107/157388765bf4559293e70cf06290881b.png" alt=""></li>
+            <li><img src="http://tu.rrsub.com:8014/ftp/2016/0104/d8bc8bb5803fa99a78ed8b1a930bd6ff.png" alt=""></li>
+            <li><img src="http://tu.rrsub.com:8014/ftp/2015/1107/a3604796645b4e9b533b8bf74bf8b3e5.jpg" alt=""></li>
+        </ul>
+        <ul>
+            <li>
+                <h2>Sub HD字幕站</h2>
+            </li>
+            <li>
+                <h2>圣城论坛</h2>
+            </li>
+            <li>
+                <h2>深影论坛</h2>
+            </li>
+            <li>
+                <h2>电波字幕组</h2>
+            </li>
+            <li>
+                <h2>迪幻字幕组</h2>
+            </li>
+            <li>
+                <h2>高清mp4</h2>
+            </li>
+            <li>
+                <h2>80s手机电影</h2>
+            </li>
+            <li>
+                <h2>射手网(伪)</h2>
+            </li>
+        </ul>
+    </section>
+    <div class="divider" name="hearder-divider"></div>
+    <footer class="footer">
+        <h2>緊急事務處理郵箱：zimuzu.tv#gmail.com 加入字幕组 APP手机客户端 意见反馈 站长统计</h2>
+    </footer>
+    
+</body>
+
+</html>
